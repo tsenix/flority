@@ -100,9 +100,6 @@ h6 {
 html {
   scroll-behavior: smooth
 }
-body {
-  background-color: #fff
-}
 .lock body {
   overflow: hidden;
   touch-action: none;
@@ -112,8 +109,7 @@ body {
 .wrapper {
   min-height: 100%;
   display: flex;
-  flex-direction: column;
-  overflow: hidden
+  flex-direction: column
 }
 @supports (overflow:clip) {
   .wrapper {
