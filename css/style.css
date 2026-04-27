@@ -117,9 +117,6 @@ h6 {
   -ms-scroll-chaining: none;
   overscroll-behavior: none
 }
-.page {
-  margin-top: 90px
-}
 ._container {
   padding: 0 20px
 }
@@ -1839,9 +1836,6 @@ textarea.input {
   }
 }
 @media (min-width:61.99875em) {
-  .page {
-    margin-top: 170px
-  }
   ._container {
     padding: 0;
     margin: 0 auto;
@@ -2143,7 +2137,7 @@ textarea.input {
 }
 @media (min-width:79.99875em) {
   ._container {
-    width: 1240px
+    width: 1120px
   }
   .footer__body {
     gap: 0
@@ -2217,12 +2211,12 @@ textarea.input {
   .products__item-actions {
     margin-top: 10px;
     flex-direction: row;
-    gap: 20px
+    gap: 10px
   }
   .products__item-btn {
-    flex: 0 0 calc(50% - 10px);
-    width: calc(50% - 10px);
-    font-size: 16px
+    flex: 0 0 calc(50% - 5px);
+    width: calc(50% - 5px);
+    padding: 10px 5px
   }
   .basket__list {
     width: 100%;
@@ -2231,9 +2225,6 @@ textarea.input {
   }
 }
 @media (min-width:89.99875em) {
-  ._container {
-    width: 1300px
-  }
   .products__body:not(.products__body-slider) {
     gap: 40px 22px
   }
