@@ -103,6 +103,7 @@ h6 {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch
 }
 .wrapper>main {
@@ -804,7 +805,7 @@ textarea.input {
   transition: all .5s ease
 }
 .breadcrumbs {
-  padding: 40px 0 10px
+  padding: 20px 0 10px
 }
 .breadcrumbs__list {
   display: flex;
@@ -907,8 +908,8 @@ textarea.input {
 }
 .info__body table td,
 .info__body table th {
-  padding: 12px 15px;
-  min-width: 250px;
+  font-size: 12px;
+  padding: 5px;
   line-height: 135%
 }
 .info__body table th {
@@ -924,13 +925,14 @@ textarea.input {
   border-top: none
 }
 .info__table {
+  width: 100%;
   padding-bottom: 10px;
   overflow-x: auto
 }
 .main-banner {
   position: relative;
   padding: 20px 0;
-  margin: 25px 0
+  margin: 10px 0 25px
 }
 .main-banner__image {
   position: absolute;
@@ -1963,7 +1965,7 @@ textarea.input {
     fill: #ff6969
   }
   .breadcrumbs {
-    padding: 20px 0 10px
+    padding: 0 0 10px
   }
   .breadcrumbs__item.link:hover {
     color: #ff6969
@@ -1977,8 +1979,14 @@ textarea.input {
   .info__body a:hover {
     color: #ff6969
   }
+  .info__body table td,
+  .info__body table th {
+    padding: 10px;
+    min-width: 200px;
+    font-size: 14px
+  }
   .main-banner {
-    margin: 20px 0 35px;
+    margin: 0 0 35px;
     padding: 60px 0 25px
   }
   .main-banner__info {
@@ -2001,6 +2009,13 @@ textarea.input {
   .main-banner__button span {
     font-size: 16px;
     line-height: 44px
+  }
+  .products__body:not(.products__body-slider) {
+    gap: 40px 22px
+  }
+  .products__item:not(.swiper-slide) {
+    flex: 0 0 calc(25% - 16.5px);
+    width: calc(25% - 16.5px)
   }
   .products__item-image:hover img {
     -webkit-transform: translate(-50%,-50%) scale(1.1);
@@ -2184,6 +2199,12 @@ textarea.input {
     flex-direction: row;
     gap: 36px
   }
+  .info__body table td,
+  .info__body table th {
+    padding: 12px 15px;
+    min-width: 250px;
+    font-size: 16px
+  }
   .products__body .swiper-wrapper {
     margin-bottom: 60px
   }
@@ -2222,15 +2243,6 @@ textarea.input {
     width: 100%;
     max-width: 1080px;
     margin: 0 auto
-  }
-}
-@media (min-width:89.99875em) {
-  .products__body:not(.products__body-slider) {
-    gap: 40px 22px
-  }
-  .products__item:not(.swiper-slide) {
-    flex: 0 0 calc(25% - 16.5px);
-    width: calc(25% - 16.5px)
   }
 }
 @media (min-width:374.99px) {
